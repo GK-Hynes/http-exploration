@@ -1,0 +1,24 @@
+{
+  "name": "http-exploration",
+  "version": "1.0.0",
+  "description": "HTTP is a request-response protocol which allows for communication between servers and clients.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GK-Hynes/http-exploration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GK-Hynes/http-exploration/issues"
+  },
+  "homepage": "https://github.com/GK-Hynes/http-exploration#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  }
+}
