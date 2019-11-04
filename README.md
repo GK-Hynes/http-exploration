@@ -1,10 +1,12 @@
 # HTTP - Hypertext Transfer Protocol
 
-HTTP is a request-response protocol which allows for communication between servers and clients.
+HTTP is a protocol which allows for communication between servers and clients. The message sent by the client, usually a web browser, is the **request**, and the message sent in return by the server is the **response**.
+
+HTTP was developed in the early 1990s and designed to be extensible. Initially used to fetch HTML, it was extended to allow it to fetch other content, such as images and videos, and also to send content to the server.
 
 ## HTTP is stateless
 
-Every request is completely independent. The server does not remeber the state of the client when previous requests were sent. Other methods, such as localStorage, cookies and sessions are needed for that.
+Every request is completely independent. The server does not keep any data (or state) between two requests. Other methods, such as localStorage, cookies and sessions are needed for that.
 
 ## HTTPS - Hypertext Transfer Protocol Secure
 
