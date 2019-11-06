@@ -6,6 +6,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.use(express.static("public"));
+
 app.post("/contact", (req, res) => {
   if (!req.body.name) {
     return res.status(400).send("Name is required");
@@ -26,6 +28,21 @@ app.post("/login", (req, res) => {
   }
 
   res.send("Logged in");
+});
+
+app.put("/post/:id", (req, res) => {
+  // UPDATE DATABASE
+
+  res.json({
+    id: req.params.id,
+    title: req.body.title
+  });
+});
+
+app.delete("/post/:id", (req, res) => {
+  // UPDATE DATABASE
+
+  res.json({ msg: `Post ${req.params.id} deleted` });
 });
 
 app.listen(5000, () => console.log("Server started on port 5000"));
